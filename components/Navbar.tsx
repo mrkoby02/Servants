@@ -17,23 +17,26 @@ const Navbar: React.FC = () => {
   const navLinks = [
     { name: 'Serviços', href: '#servicos' },
     { name: 'Benefícios', href: '#beneficios' },
+    { name: 'Depoimentos', href: '#depoimentos' },
     { name: 'Contato', href: '#contato' },
   ];
+
+  const logoSrc = "logo.jpg";
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-3">
-            <div className="h-12 w-12 overflow-hidden rounded-full border-2 border-white/30 shadow-sm flex-shrink-0">
+            <div className="h-12 w-12 overflow-hidden rounded-lg shadow-sm flex-shrink-0">
               <img 
-                src="https://replicate.delivery/xpb/76191b35-139d-4886-905b-a7e651e44f8f/logo.png" 
-                alt="Servant's Logo" 
+                src={logoSrc} 
+                alt="Servants Logo" 
                 className="h-full w-full object-cover"
               />
             </div>
             <span className={`text-2xl font-extrabold tracking-tight ${scrolled ? 'text-gray-900' : 'text-gray-900 md:text-white'}`}>
-              SERVANT'S
+              Servants
             </span>
           </div>
 

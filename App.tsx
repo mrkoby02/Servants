@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import Benefits from './components/Benefits';
+import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -25,6 +26,7 @@ const App: React.FC = () => {
         <Hero />
         <Services onSelectService={handleSelectService} />
         <Benefits />
+        <Testimonials />
         <section className="bg-[#6b8e83] py-16 px-4">
           <div className="max-w-7xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
