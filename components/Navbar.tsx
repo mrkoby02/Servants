@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-3">
-            <div className="h-10 w-10 overflow-hidden rounded-md border border-white/20">
+            <div className="h-12 w-12 overflow-hidden rounded-full border-2 border-white/30 shadow-sm flex-shrink-0">
               <img 
                 src="https://replicate.delivery/xpb/76191b35-139d-4886-905b-a7e651e44f8f/logo.png" 
                 alt="Servant's Logo" 
@@ -43,14 +43,14 @@ const Navbar: React.FC = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className={`font-medium transition-colors ${scrolled ? 'text-gray-600 hover:text-blue-600' : 'text-gray-100 hover:text-white'}`}
+                className={`font-medium transition-colors ${scrolled ? 'text-gray-600 hover:text-[#6b8e83]' : 'text-gray-100 hover:text-white'}`}
               >
                 {link.name}
               </a>
             ))}
             <a
               href="#contato"
-              className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+              className="bg-[#6b8e83] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#5b7a70] transition-colors"
             >
               Solicitar Orçamento
             </a>
@@ -60,7 +60,7 @@ const Navbar: React.FC = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`${scrolled ? 'text-gray-600' : 'text-gray-900'} hover:text-blue-600 focus:outline-none`}
+              className={`${scrolled ? 'text-gray-600' : 'text-gray-900'} hover:text-[#6b8e83] focus:outline-none`}
             >
               {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
@@ -77,7 +77,7 @@ const Navbar: React.FC = () => {
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block px-3 py-4 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md"
+                className="block px-3 py-4 text-base font-medium text-gray-700 hover:text-[#6b8e83] hover:bg-gray-50 rounded-md"
               >
                 {link.name}
               </a>
@@ -85,7 +85,7 @@ const Navbar: React.FC = () => {
             <a
               href="#contato"
               onClick={() => setIsOpen(false)}
-              className="block w-full text-center bg-blue-600 text-white px-3 py-4 rounded-md font-bold"
+              className="block w-full text-center bg-[#6b8e83] text-white px-3 py-4 rounded-md font-bold"
             >
               Solicitar Orçamento
             </a>
