@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
     { name: 'Contato', href: '#contato' },
   ];
 
-  const logoSrc = "logo.jpg";
+  const logoSrc = "https://dev-servants.pantheonsite.io/wp-content/uploads/2026/01/servants-logo-1.jpg";
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
